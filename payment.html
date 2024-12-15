@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Responsive Payment Gateway Form</title>
+	<link rel="stylesheet" type="text/css" href="payment.css">
+</head>
+<body>
+<header>
+	<div class="container">
+		<div class="left">
+			<h3>BILLING ADDRESS</h3>
+			<form>
+				Full name
+				<input type="text" name="" placeholder="Enter name" required>
+				Email
+				<input type="text" name="" placeholder="Enter email" required>
+				Address
+				<input type="text" name="" placeholder="Enter address" required>
+				City
+				<input type="text" name="" placeholder="Enter City" required>
+				<div id="zip">
+					<label>
+						State
+						<select required>
+							<option value="">Choose Region...</option>
+							<option>Auvergne-Rhône-Alpes</option>
+							<option>Bourgogne-Franche-Comté</option>
+							<option>Bretagne</option>
+							<option>Centre-Val de Loire</option>
+							<option>Corse</option>
+							<option>Grand Est</option>
+							<option>Hauts-de-France</option>
+							<option>Île-de-France</option>
+							<option>Normandie</option>
+							<option>Nouvelle-Aquitaine</option>
+							<option>Occitanie</option>
+							<option>Pays de la Loire</option>
+							<option>Provence-Alpes-Côte d'Azur</option>
+							<option>Guadeloupe</option>
+							<option>Martinique</option>
+							<option>Guyane</option>
+							<option>La Réunion</option>
+							<option>Mayotte</option>
+						</select>
+					</label>
+					<label>
+						Zip code
+						<input type="number" name="" placeholder="Zip code" required>
+					</label>
+				</div>
+			</form>
+		</div>
+		<div class="right">
+			<h3>PAYMENT</h3>
+			<form>
+				Accepted Card <br>
+				<img src="images/card1.png" width="100">
+				<img src="images/card2.png" width="50">
+				<br><br>
+
+				Credit card number
+				<input type="text" name="" placeholder="Enter card number" required>
+				
+				Exp month
+				<input type="text" name="" placeholder="Enter Month" required>
+				<div id="zip">
+					<label>
+						Exp year
+						<select required>
+							<option value="">Choose Year...</option>
+							<option>2024</option>
+							<option>2025</option>
+							<option>2026</option>
+							<option>2027</option>
+							<option>2028</option>
+							<option>2029</option>
+						</select>
+					</label>
+					<label>
+						CVV
+						<input type="number" name="" placeholder="CVV" required>
+					</label>
+				</div>
+			</form>
+			<input type="submit" name="" value="Proceed to Checkout">
+			<button class="cancel-button" onclick="window.location.href='index.php';">Cancel</button>
+		</div>
+	</div>
+</header>
+</body>
+</html>

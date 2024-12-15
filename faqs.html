@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - E-Commerce</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            
+            background: linear-gradient(to bottom, 
+            #2f0fe7 10%,  /* Red color, concentrated in the first 10% */
+            #EDEFD9 40%,  /* Beige color starts blending around 40% */
+            #B3C5B5 100%  /* Green finishes at the bottom */
+        );
+         background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;}
+    nav {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .logo img {
+            width: 80px;
+        }
+        .nav-container .links {
+            display: flex;
+            margin-left: auto;
+        }
+        .nav-container .links .link {
+            margin: 0 15px;
+            position: relative;
+        }
+        .nav-container .links .link a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+        .nav-container .links .link a:hover {
+            color: #f0be61;
+        }
+        .nav-container .links .link::before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: #d2911c;
+            transition: width 0.3s ease;
+        }
+        .nav-container .links .link:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.php">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="links">
+                <div class="link"><a href="index.php">Home</a></div>
+                <div class="link"><a href="allproducts.php">All Products</a></div>
+                <div class="link"><a href="contactus.php">Contact Us</a></div>
+            </div>
+        </div>
+    </nav>
+    
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 36px;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .categories {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .categories ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .categories li {
+            margin: 10px 0;
+        }
+
+        .categories a {
+            text-decoration: none;
+            color: #666;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .categories a:hover {
+            color: #333;
+        }
+
+        .faq-section {
+            flex: 3;
+            margin-left: 20px;
+        }
+
+        .faq-category {
+            margin-bottom: 30px;
+        }
+
+        .faq-category h2 {
+            font-size: 24px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+
+        .faq-item {
+            background-color: #fff;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            font-size: 18px;
+            padding: 15px 20px;
+            margin: 0;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f1f1f1;
+            font-weight: 600;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 15px 20px;
+            font-size: 16px;
+            line-height: 1.6;
+            background-color: #fff;
+        }
+
+        .faq-question::after {
+            content: '\25BC';
+            font-size: 14px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-item.active .faq-question::after {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Questions & Answers</h1>
+    <div class="container">
+        <!-- Categories -->
+        <div class="categories">
+            <h3>CATEGORIES</h3>
+            <ul>
+                <li><a href="#basics">Basics</a></li>
+                <li><a href="#account">Account</a></li>
+                <li><a href="#payments">Payments</a></li>
+                <li><a href="#orders">Orders</a></li>
+                <li><a href="#shipping">Shipping</a></li>
+                <li><a href="#returns">Returns</a></li>
+            </ul>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <!-- Basics -->
+            <div class="faq-category" id="basics">
+                <h2>Basics</h2>
+                <div class="faq-item">
+                    <p class="faq-question">How do I create an account?</p>
+                    <div class="faq-answer">To create an account, click on "Sign Up" at the top of the homepage and fill in your details.</div>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">What is this website about?</p>
+                    <div class="faq-answer">We offer a wide range of products including electronics, clothing, accessories, and home goods.</div>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Do you have a mobile app?</p>
+                    <div class="faq-answer">Yes, our mobile app is available for both iOS and Android devices.</div>
+                </div>
+            </div>
+
+            <!-- Account -->
+            <div class="faq-category" id="account">
+                <h2>Account</h2>
+                <div class="faq-item">
+                    <p class="faq-question">How do I reset my password?</p>
+                    <div class="faq-answer">Click on "Forgot Password" at the login page and follow the instructions to reset your password.</div>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">How do I delete my account?</p>
+                    <div class="faq-answer">To delete your account, please contact our support team with your account details.</div>
+                </div>
+            </div>
+
+            <!-- Payments -->
+            <div class="faq-category" id="payments">
+                <h2>Payments</h2>
+                <div class="faq-item">
+                    <p class="faq-question">What payment methods do you accept?</p>
+                    <div class="faq-answer">We accept Visa, MasterCard, PayPal, and Apple Pay.</div>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Is it safe to use my credit card?</p>
+                    <div class="faq-answer">Yes, all transactions are encrypted with secure SSL protocols for maximum security.</div>
+                </div>
+            </div>
+
+            <!-- Orders -->
+            <div class="faq-category" id="orders">
+                <h2>Orders</h2>
+                <div class="faq-item">
+                    <p class="faq-question">How can I track my order?</p>
+                    <div class="faq-answer">You can track your order through the "Orders" section in your account dashboard.</div>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Can I change my order after placing it?</p>
+                    <div class="faq-answer">Yes, you can modify your order within 2 hours of placing it by contacting our support team.</div>
+                </div>
+            </div>
+
+            <!-- Shipping -->
+            <div class="faq-category" id="shipping">
+                <h2>Shipping</h2>
+                <div class="faq-item">
+                    <p class="faq-question">What are the shipping costs?</p>
+                    <div class="faq-answer">Shipping costs vary depending on location and product weight. Free shipping is available for orders above $50.</div>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">Do you ship internationally?</p>
+                    <div class="faq-answer">Yes, we ship to over 100 countries worldwide.</div>
+                </div>
+            </div>
+
+            <!-- Returns -->
+            <div class="faq-category" id="returns">
+                <h2>Returns</h2>
+                <div class="faq-item">
+                    <p class="faq-question">How do I return a product?</p>
+                    <div class="faq-answer">You can initiate a return through your account dashboard under "Returns" or contact support for assistance.</div>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-question">How long do refunds take?</p>
+                    <div class="faq-answer">Refunds are processed within 5-7 business days after the returned product is received.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for FAQ accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Toggle active class
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>

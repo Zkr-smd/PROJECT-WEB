@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Signup</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image: url('back.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            display: flex;
+            width: 70%;
+            max-width: 1000px;
+            background: rgba(255, 255, 255, 0.9); /* Slightly transparent white */
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .form-container {
+            flex: 1;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .form-container h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .form-container p {
+            font-size: 16px;
+            margin-bottom: 25px;
+            color: #666;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .form-container input {
+            width: 100%;
+            padding: 15px;
+            margin: 12px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .form-container input:focus {
+            border-color: #007BFF;
+            outline: none;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+        }
+
+        .form-container button:hover {
+            background-color: #0056b3;
+            transform: scale(1.02);
+        }
+
+        .form-container .social-icons {
+            display: flex;
+            justify-content: center;
+            margin: 15px 0 30px;
+        }
+
+        .form-container .social-icons a {
+            margin: 0 12px;
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 24px;
+        }
+
+        .form-container .social-icons a:hover {
+            color: #0056b3;
+        }
+
+        .form-container.sign-in {
+            background-color: rgba(0, 123, 255, 0.9); /* Slightly transparent blue */
+            color: white;
+        }
+
+        .form-container.sign-in h2,
+        .form-container.sign-in p {
+            color: white;
+        }
+
+        .form-container.sign-in button {
+            background-color: white;
+            color: #007BFF;
+        }
+
+        .form-container.sign-in button:hover {
+            background-color: #e6e6e6;
+        }
+
+        /* Go Back Button */
+        .go-back {
+            margin: 20px 0;
+            padding: 12px 20px;
+            background-color: #6c757d;
+            color: white;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .go-back:hover {
+            background-color: #5a6268;
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                width: 90%;
+            }
+
+            .form-container {
+                padding: 30px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Go Back Button -->
+    <a href="index.php" class="go-back">Go Back to Home</a>
+    
+
+    <div class="container">
+        <!-- Sign In Form -->
+        <div class="form-container sign-in">
+            <h2>Welcome Back!</h2>
+            <p>To keep connected with us, please log in with your personal info.</p>
+            <form method="POST" action="signin.php">
+                <!-- Email -->
+                <input type="email" name="email" placeholder="Email" required>
+        
+                <!-- Password -->
+                <input type="password" name="password" placeholder="Password" required>
+        
+                <!-- Submit Button -->
+                <button type="submit" name="signin">Sign In</button>
+            </form>
+        </div>
+        
+
+        <!-- Sign Up Form -->
+        <div class="form-container">
+            <h2>Create Account</h2>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+            <p>or use email for registration</p>
+            <form method="POST" action="signup.php">
+                <!-- First Name -->
+                <input type="text" name="fname" placeholder="First Name" required>
+        
+                <!-- Last Name -->
+                <input type="text" name="lname" placeholder="Last Name" required>
+        
+                <!-- Email -->
+                <input type="email" name="email" placeholder="Email" required>
+        
+                <!-- Password -->
+                <input type="password" name="password" placeholder="Password (10+ characters)" required>
+        
+                <!-- Submit Button -->
+                <button type="submit" name="signup">Sign Up</button>
+            </form>
+        </div>
+        
+    </div>
+
+    <!-- Font Awesome for Social Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

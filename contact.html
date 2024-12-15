@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Paris</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(to bottom, 
+            #B35945 10%,  /* Red color, concentrated in the first 10% */
+            #EDEFD9 40%,  /* Beige color starts blending around 40% */
+            #B3C5B5 100%  /* Green finishes at the bottom */
+        );
+         background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;}
+    nav {
+            width: 100%;
+            height: 10vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 5%;
+        }
+        .nav-container {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        .logo img {
+            width: 80px;
+        }
+        .nav-container .links {
+            display: flex;
+            margin-left: auto;
+        }
+        .nav-container .links .link {
+            margin: 0 15px;
+            position: relative;
+        }
+        .nav-container .links .link a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 500;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+        .nav-container .links .link a:hover {
+            color: #f0be61;
+        }
+        .nav-container .links .link::before {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background: #d2911c;
+            transition: width 0.3s ease;
+        }
+        .nav-container .links .link:hover::before {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <a href="index.php">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+            <div class="links">
+                <div class="link"><a href="index.php">Home</a></div>
+                <div class="link"><a href="allproducts.php">All Products</a></div>
+                <div class="link"><a href="contactus.php">Contact Us</a></div>
+            </div>
+        </div>
+    </nav>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .contact_us_6 {
+            width: 100%;
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .responsive-container-block {
+            max-width: 1200px;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .form-box {
+            background: white;
+            padding: 40px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-wrapper .text-blk {
+            text-align: center;
+        }
+
+        .form-wrapper .contactus-head {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .form-wrapper .contactus-subhead {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .input-title {
+            font-size: 14px;
+            color: #000000;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+
+        .input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #eaeaea;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .textinput {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #eaeaea;
+            border-radius: 5px;
+            min-height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #03a9f4;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #0288d1;
+        }
+
+        .map-part {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .map-contactus-head {
+            font-size: 24px;
+            font-weight: bold;
+            color: #03a9f4;
+            margin-bottom: 10px;
+        }
+
+        .map-contactus-subhead {
+            font-size: 14px;
+            color: #090deb;
+            margin-bottom: 20px;
+        }
+
+        .map-box iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .social-media-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-icon-link img {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .responsive-container-block {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .form-box {
+                margin-bottom: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact_us_6">
+        <div class="responsive-container-block">
+            <!-- Form Section -->
+            <form class="form-box">
+                <div class="form-wrapper">
+                    <p class="text-blk contactus-head">Get in Touch</p>
+                    <p class="text-blk contactus-subhead">Feel free to reach out to us in Paris!</p>
+                    <div>
+                        <label class="text-blk input-title">FIRST NAME</label>
+                        <input class="input" type="text" name="FirstName" placeholder="Enter your first name">
+                    </div>
+                    <div>
+                        <label class="text-blk input-title">EMAIL</label>
+                        <input class="input" type="email" name="Email" placeholder="Enter your email">
+                    </div>
+                    <div>
+                        <label class="text-blk input-title">PHONE NUMBER</label>
+                        <input class="input" type="tel" name="PhoneNumber" placeholder="Enter your phone number">
+                    </div>
+                    <div>
+                        <label class="text-blk input-title">WHAT DO YOU HAVE IN MIND?</label>
+                        <textarea class="textinput" name="Query" placeholder="Enter your message"></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </div>
+            </form>
+
+            <!-- Map and Contact Section -->
+            <div class="map-part">
+                <p class="map-contactus-head">Reach Us at Paris</p>
+                <p class="map-contactus-subhead">We're based in the heart of Paris. Visit us anytime!</p>
+                <div class="map-box">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.999022623112!2d2.2922928156746346!3d48.85884447928709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc7e0c0bffb%3A0x9d5430a1a4cb9cb!2sEiffel%20Tower!5e0!3m2!1sen!2sfr!4v1700000000000!5m2!1sen!2sfr"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="social-media-links">
+                    <a class="social-icon-link" href="https://www.facebook.com/eceingenieurs/" target="_blank">
+                        <img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-facebook.png" alt="Facebook">
+                    </a>
+                    <a class="social-icon-link" href="https://x.com/ECEingenieurs" target="_blank">
+                        <img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-twitter.png" alt="Twitter">
+                    </a>
+                    <a class="social-icon-link" href="https://www.instagram.com/ecoleece/?hl=en" target="_blank">
+                        <img src="https://workik-widget-assets.s3.amazonaws.com/Footer1-83/v1/images/Icon-instagram.png" alt="Instagram">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
